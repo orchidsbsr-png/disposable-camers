@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Candid Cam",
+    "slug": "candid-cam",
+    "version": "1.0.0",
+    "scheme": "candidcam",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0d0800",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Candid Cam to use your camera to take event photos."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Candid Cam to save event photos to your camera roll.",
+          "savePhotosPermission": "Allow Candid Cam to save photos to your camera roll."
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.candidcam.app"
+    },
+    "android": {
+      "package": "com.candidcam.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    }
+  }
+}
